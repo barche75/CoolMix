@@ -13,6 +13,12 @@
 		BF8B420B26985D830075512F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8B420926985D830075512F /* Main.storyboard */; };
 		BF8B420D26985D860075512F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8B420C26985D860075512F /* Assets.xcassets */; };
 		BF8B421026985D860075512F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8B420E26985D860075512F /* LaunchScreen.storyboard */; };
+		BF8B421A26985DCD0075512F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B421926985DCD0075512F /* Router.swift */; };
+		BF8B422026985E830075512F /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B421F26985E830075512F /* Assembler.swift */; };
+		BF8B4223269860EA0075512F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B4222269860EA0075512F /* MainView.swift */; };
+		BF8B4228269865FD0075512F /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B4227269865FD0075512F /* MainViewViewModel.swift */; };
+		BF8B422D269879F90075512F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B422C269879F90075512F /* DetailView.swift */; };
+		BF8B422F26987A470075512F /* DetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8B422E26987A470075512F /* DetailViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BF8B420C26985D860075512F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8B420F26985D860075512F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF8B421126985D860075512F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8B421926985DCD0075512F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BF8B421F26985E830075512F /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		BF8B4222269860EA0075512F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BF8B4227269865FD0075512F /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		BF8B422C269879F90075512F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BF8B422E26987A470075512F /* DetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		BF8B420226985D830075512F /* CoolMix */ = {
 			isa = PBXGroup;
 			children = (
+				BF8B421726985D9F0075512F /* Router */,
+				BF8B421826985DAA0075512F /* Assembler */,
+				BF8B4221269860D10075512F /* Screens */,
 				BF8B420326985D830075512F /* AppDelegate.swift */,
 				BF8B420526985D830075512F /* SceneDelegate.swift */,
 				BF8B420726985D830075512F /* ViewController.swift */,
@@ -65,6 +80,81 @@
 				BF8B421126985D860075512F /* Info.plist */,
 			);
 			path = CoolMix;
+			sourceTree = "<group>";
+		};
+		BF8B421726985D9F0075512F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B421926985DCD0075512F /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BF8B421826985DAA0075512F /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B421F26985E830075512F /* Assembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		BF8B4221269860D10075512F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B4224269860FA0075512F /* Main */,
+				BF8B4229269879C60075512F /* Detail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BF8B4224269860FA0075512F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B4225269861050075512F /* View */,
+				BF8B4226269865E30075512F /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BF8B4225269861050075512F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B4222269860EA0075512F /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF8B4226269865E30075512F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B4227269865FD0075512F /* MainViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF8B4229269879C60075512F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B422B269879E10075512F /* View */,
+				BF8B422A269879D60075512F /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BF8B422A269879D60075512F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B422E26987A470075512F /* DetailViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BF8B422B269879E10075512F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF8B422C269879F90075512F /* DetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8B421A26985DCD0075512F /* Router.swift in Sources */,
+				BF8B4228269865FD0075512F /* MainViewViewModel.swift in Sources */,
+				BF8B422D269879F90075512F /* DetailView.swift in Sources */,
+				BF8B4223269860EA0075512F /* MainView.swift in Sources */,
+				BF8B422026985E830075512F /* Assembler.swift in Sources */,
 				BF8B420826985D830075512F /* ViewController.swift in Sources */,
 				BF8B420426985D830075512F /* AppDelegate.swift in Sources */,
+				BF8B422F26987A470075512F /* DetailViewViewModel.swift in Sources */,
 				BF8B420626985D830075512F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
